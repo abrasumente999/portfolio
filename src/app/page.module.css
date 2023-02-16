@@ -1,0 +1,46 @@
+.intro {
+  width: 30vw;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.smallHeader {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.bigHeader {
+  display: block;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 72px;
+}
+
+.introDescription {
+  font-weight: 400;
+}
+.button1,
+.button2 {
+  border-radius: 0;
+  width: 8em;
+  padding: 0.7em 1em;
+  margin-right: 1em;
+  text-transform: uppercase;
+}
+
+.button1 {
+  background-color: #f1968f;
+  border-style: solid;
+  border-color: #f1968f;
+  color: #ffffff;
+}
+
+.button2 {
+  border-style: solid;
+  background-color: #ffffff;
+  border-color: black;
+}
