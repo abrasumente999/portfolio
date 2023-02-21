@@ -39,16 +39,13 @@
 
 @media (max-width: 768px) {
   .introContainer {
-    margin-left: 10%;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    position: relative;
   }
   .introText {
     width: 60%;
-    padding-top: 10%;
+    margin: 15vh 8vw;
     z-index: 1;
 
     /* display: flex; */
@@ -56,25 +53,32 @@
   .introImageContainer {
     z-index: -1;
     position: absolute;
-    display: block;
     /* overflow: hidden; */
-    width: 100%;
-    /* display: flex; */
-    /* flex: 1 1 auto; */
-    margin-top: -30%;
-    margin-left: -30%;
-  }
-
-  .introBlob {
-    border-radius: 0% 50% 50% 50%;
-    width: 100%;
-    min-width: 400px;
-    max-width: 900px;
-    height: auto;
-    /* flex: 1 1 auto; */
+    border-radius: 50% 50% 50% 50%;
+    height: 150vw;
+    width: 150vw;
+    max-height: 850px;
+    max-width: 850px;
+    min-width: 700px;
+    min-height: 700px;
+    right: 10px;
+    left: -200px;
+    top: -20vh;
     background-color: #f3cac7;
   }
-  .introBlob::before {
+
+  .introBlobMini {
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    top: 450px;
+    right: 0%;
+    height: auto;
+    width: 50vw;
+    max-width: 300px;
+
+    background-color: #eb5a60;
+  }
+  .introBlobMini::before {
     content: "";
     display: block;
     padding-bottom: 100%;
@@ -87,16 +91,15 @@
   }
 
   .bigHeader {
-    width: 50%;
     display: block;
     font-weight: 900;
-    word-wrap: normal;
     text-transform: uppercase;
-    font-size: 58px;
+    font-size: 4.3em;
   }
 
   .introDescription {
     font-weight: 400;
+    width: 100%;
   }
   .button1,
   .button2 {
@@ -127,7 +130,7 @@
   }
 
   .introBlob {
-    border-radius: 50% 50% 50% 50%;
+    border-radius: 50%;
     width: 120%;
     position: relative;
     background-color: #f3cac7;

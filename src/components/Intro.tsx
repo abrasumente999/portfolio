@@ -8,7 +8,8 @@ export default function Intro() {
         <h1 className={styles.smallHeader}>
           <span className={robotoMono.className}>Hello my name is</span>
           <span className={roboto.className + " " + styles.bigHeader}>
-            Katie Holliday
+            Katie <br />
+            Holliday
           </span>
         </h1>
         <p className={robotoMono.className + " " + styles.introDescription}>
@@ -21,10 +22,9 @@ export default function Intro() {
         </div>
       </section>
       <section className={styles.introImageContainer}>
-        <div className={styles.introBlob}>
-          <div className={styles.introBlobMini}></div>
-        </div>
+        <div className={styles.introBlob}></div>
       </section>
+      <div className={styles.introBlobMini}></div>
     </header>
   );
 }
