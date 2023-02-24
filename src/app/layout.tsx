@@ -16,6 +16,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
+        {/* <Nav /> */}
         <Nav />
         <main>{children}</main>
         <Footer />
