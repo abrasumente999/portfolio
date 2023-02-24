@@ -17,8 +17,12 @@ export default function Intro() {
         </p>
 
         <div className={styles.buttonsContainer}>
-          <button className={styles.button1}>Projects</button>
-          <button className={styles.button2}>LinkedIn</button>
+          <button className={roboto.className + " " + styles.button1}>
+            Projects
+          </button>
+          <button className={roboto.className + " " + styles.button2}>
+            LinkedIn
+          </button>
         </div>
       </section>
       <section className={styles.introImageContainer}>
