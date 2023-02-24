@@ -1,9 +1,9 @@
-import { Roboto, Roboto_Mono } from "@next/font/google";
+import { Roboto_Flex, Roboto_Mono } from "@next/font/google";
 
-export const roboto = Roboto({
-  weight: ["100", "300", "400", "700", "900"],
+export const roboto = Roboto_Flex({
   style: ["normal"],
   subsets: ["latin"],
+  axes: ["wdth"],
 });
 
 export const robotoMono = Roboto_Mono({
