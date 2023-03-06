@@ -1,4 +1,4 @@
-import styles from "../app/page.module.css";
+import styles from "./Intro.module.css";
 import { robotoMono, roboto } from "@/app/fonts";
 
 export default function Intro() {

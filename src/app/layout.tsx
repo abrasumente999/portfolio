@@ -1,7 +1,8 @@
-import Footer from "@/components/Footer";
-import Nav from "@/components/Nav";
+import Footer from "@/components/Footer/Footer";
+import Nav from "@/components/Nav/Nav";
 import "./globals.css";
 import { roboto } from "./fonts";
+import BurgerNav from "@/components/BurgerNav/BurgerNav";
 
 export default function RootLayout({
   children,
@@ -16,8 +17,8 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        {/* <Nav /> */}
         <Nav />
+
         <main>{children}</main>
         <Footer />
       </body>

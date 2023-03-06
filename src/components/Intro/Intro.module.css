@@ -1,0 +1,147 @@
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.button1 {
+  background-color: #f1968f;
+  border-style: solid;
+  border-color: #f1968f;
+  color: #ffffff;
+}
+
+.button2 {
+  border-style: solid;
+  background-color: #ffffff;
+  border-color: black;
+}
+
+@media screen and (max-width: 1023px) {
+  .introContainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .introImageContainer {
+    z-index: -1;
+    position: absolute;
+    border-radius: 50% 50% 50% 50%;
+    height: 100vh;
+    width: 100vh;
+    max-height: 1000px;
+    max-width: 1000px;
+    min-width: 700px;
+    min-height: 700px;
+    /* right: 10px; */
+    left: -30vw;
+    top: -25vh;
+    background-color: #f3cac7;
+  }
+
+  .introBlobMini {
+    z-index: -1;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    bottom: 10vh;
+    right: 20vw;
+    height: auto;
+    width: 28vh;
+    max-width: 300px;
+
+    background-color: #eb5a60;
+  }
+  .introBlobMini::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .introText {
+    height: 100%;
+    width: 70%;
+    margin: 10vh 8vw;
+    z-index: 1;
+    margin-top: 15vh;
+
+    /* display: flex; */
+  }
+
+  .smallHeader {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .bigHeader {
+    display: block;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4em;
+  }
+
+  .introDescription {
+    font-weight: 400;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .introContainer {
+    margin: 0 10vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .introImageContainer {
+    z-index: -1;
+    position: relative;
+    border-radius: 50% 50% 50% 50%;
+    height: 60vw;
+    width: 60vw;
+    margin-top: -40vh;
+    padding-left: 10vw;
+    background-color: #f3cac7;
+  }
+
+  .introBlobMini {
+    border-radius: 50% 50% 50% 50%;
+    position: relative;
+    margin-left: -58vw;
+    margin-bottom: -40vh;
+    width: 30vh;
+    background-color: #eb5a60;
+  }
+  .introBlobMini::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .introText {
+    width: 40%;
+    z-index: 2;
+    padding-right: 5vw;
+  }
+  .smallHeader {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-stretch: condensed;
+    font-weight: 400;
+  }
+
+  .bigHeader {
+    display: block;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 6em;
+    font-stretch: condensed;
+  }
+
+  .introDescription {
+    font-weight: 400;
+  }
+}
