@@ -1,41 +1,49 @@
 @media screen and (max-width: 1023px) {
   .aboutContainer {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
     display: flex;
-    /* justify-content: center; */
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    position: relative;
     align-items: center;
+    margin: 0 10vw 0 10vw;
+    padding: 15vh 0;
   }
 
   .aboutImageContainer {
     z-index: -4;
     position: absolute;
     border-radius: 50% 50% 50% 50%;
-    height: 90vw;
-    width: 90vw;
-    max-width: 600px;
-    max-height: 600px;
+    height: 70vh;
+    width: 70vh;
+    max-width: 800px;
+    max-height: 800px;
     min-width: 300px;
     min-height: 300px;
-    right: -120px;
+    right: -50vw;
     /* left: -30vw; */
-    margin: auto;
+    /* margin: auto; */
     background-color: #eae6e4bc;
   }
-
+  .aboutBlob {
+    z-index: -10;
+    position: absolute;
+    border-radius: 50% 50% 50% 50%;
+    height: 100vh;
+    width: 100vh;
+    top: -50vh;
+    left: -70vw;
+    background-color: #eae6e43a;
+  }
   .aboutBlobMini {
     z-index: -1;
+
     border-radius: 50% 50% 50% 50%;
     position: relative;
-    display: block;
-    margin: 10vh auto auto auto;
-    height: 50vw;
-    width: 50vw;
+    height: 60vw;
+    width: 60vw;
     max-width: 300px;
     max-height: 300px;
-    min-width: 100px;
-    min-height: 100px;
     background-color: #f1968f;
   }
   .aboutBlobMini::before {
@@ -43,28 +51,23 @@
     display: block;
     padding-bottom: 100%;
   }
-  .aboutTextContainer {
-    margin: 10vh 8vw;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .smallHeader {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 400;
+  .aboutText {
+    margin: auto;
+    display: block;
+    height: auto;
   }
 
   .bigHeader {
     display: block;
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 3.5em;
+    padding: 3vh 0;
   }
 
   .aboutDescription {
     font-weight: 400;
-    width: 100%;
+    padding-bottom: 3vh;
   }
 }
 @media screen and (min-width: 1023px) {
@@ -73,42 +76,34 @@
     /* overflow: hidden; */
     height: 100vh;
     position: relative;
+    /* margin: 0 10vw; */
     display: flex;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
   }
   .aboutImageContainer {
     z-index: -1;
     position: absolute;
     border-radius: 50% 50% 50% 50%;
-    height: 50vw;
-    width: 50vw;
-    max-width: 900px;
-    max-height: 900px;
+    height: 120vh;
+    width: 120vh;
     min-width: 300px;
     min-height: 300px;
-    bottom: 4vh;
-    right: 25vw;
+    bottom: 5vh;
+    right: -6vw;
     /* margin: auto; */
     background-color: #eae6e4bc;
   }
-  /* .aboutImageContainer::before {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  } */
+
   .aboutBlob {
-    z-index: -1;
+    z-index: -10;
     position: absolute;
     border-radius: 50% 50% 50% 50%;
-    height: 90vh;
-    width: 90vh;
-    /* max-width: 900px;
-    max-height: 900px; */
-    /* min-width: 300px;
-    min-height: 300px; */
-    top: -50vh;
-    left: -20vw;
+    height: 220vh;
+    width: 220vh;
+    top: -160vh;
+    left: -60vw;
     /* margin: auto; */
     background-color: #eae6e43a;
   }
@@ -120,25 +115,16 @@
     /* margin: 10vh auto auto auto; */
     height: 30vw;
     width: 30vw;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 600px;
+    max-height: 600px;
     min-width: 100px;
     min-height: 100px;
     background-color: #f1968f;
   }
 
-  .aboutTextContainer {
-    margin: 0 5vw;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-  }
   .aboutText {
-    margin: 2vh 2vw;
-    display: flex;
-    flex-direction: column;
     width: 50%;
+    padding-left: 10vw;
     z-index: 1;
   }
   .smallHeader {
