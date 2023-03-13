@@ -5,8 +5,11 @@ export default function Intro() {
   return (
     <header className={styles.introContainer}>
       <section className={styles.introText}>
-        <h1 className={styles.smallHeader}>
-          <span className={robotoMono.className}>Hello my name is</span>
+        <h1>
+          <span className={robotoMono.className + " " + styles.smallHeader}>
+            {" "}
+            Hello my name is
+          </span>
           <span className={roboto.className + " " + styles.bigHeader}>
             Katie <br />
             Holliday
