@@ -21,8 +21,6 @@ export default function About() {
       </div>
 
       <div className={styles.profileImage}></div>
-
-      <div className={styles.aboutImageContainer}></div>
       <div className={styles.aboutBlob}></div>
     </section>
   );
