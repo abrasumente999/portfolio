@@ -3,7 +3,7 @@ import { robotoMono, roboto } from "@/app/fonts";
 
 export default function About() {
   return (
-    <section className={styles.aboutContainer}>
+    <section className={styles.aboutContainer} id="about">
       <div className={styles.aboutText}>
         <h2 className={roboto.className + " " + styles.bigHeader}>About Me</h2>
         <p className={robotoMono.className + " " + styles.aboutDescription}>

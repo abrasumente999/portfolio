@@ -3,7 +3,7 @@ import { robotoMono, roboto } from "@/app/fonts";
 
 export default function Intro() {
   return (
-    <header className={styles.introContainer}>
+    <header className={styles.introContainer} id="intro">
       <section className={styles.introText}>
         <h1>
           <span className={robotoMono.className + " " + styles.smallHeader}>
