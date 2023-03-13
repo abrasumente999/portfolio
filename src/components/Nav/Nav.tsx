@@ -44,9 +44,9 @@ export default function Nav() {
             </Link>
           </li>
         </ul>
-        <div className={styles.hamburger} onClick={toggleHamburger}>
-          <BurgerNav hamburgerOpen={hamburgerOpen} />
-        </div>
+      </div>
+      <div className={styles.hamburger} onClick={toggleHamburger}>
+        <BurgerNav hamburgerOpen={hamburgerOpen} />
       </div>
     </nav>
   );

@@ -16,7 +16,7 @@ export default function BurgerNav({
           }`}
         />
         <div
-          className={`${styles.burger} ${
+          className={`${styles.burger2} ${
             hamburgerOpen ? styles.burger2Active : styles.burger2
           }`}
         />

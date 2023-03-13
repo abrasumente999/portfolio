@@ -3,18 +3,30 @@
   height: 2rem;
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
   flex-flow: column nowrap;
   z-index: 10;
 }
+.hamburger:hover {
+  cursor: pointer;
+}
 .burger {
   width: 2rem;
-  height: 0.25rem;
-  border-radius: 10px;
+  height: 0.15em;
+  border-radius: 6px;
   background-color: black;
   transform-origin: 1px;
   transition: all 0.3s linear;
 }
 
+.burger2 {
+  width: 1.5rem;
+  height: 0.15em;
+  border-radius: 4px;
+  background-color: black;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
 .burger1 {
   rotate: 0;
 }
@@ -29,7 +41,6 @@
 }
 
 .burger2Active {
-  transform: translateX(100%);
   opacity: 0;
 }
 .burger3Active {
