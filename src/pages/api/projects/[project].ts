@@ -10,7 +10,7 @@ export default function personHandler(
   const { id } = query;
   const project = projects.find((p) => p.id === id);
 
-  // User with id exists
+  // Project with id exists
   return project
     ? res.status(200).json(project)
     : res.status(404).json({ message: `User with id: ${id} not found.` });
