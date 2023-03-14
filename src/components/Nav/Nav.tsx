@@ -2,9 +2,6 @@
 import { useState } from "react";
 import styles from "./Nav.module.css";
 import Link from "next/link";
-import { Menu } from "react-feather";
-
-import About from "../About/About";
 import BurgerNav from "../BurgerNav/BurgerNav";
 
 export default function Nav() {

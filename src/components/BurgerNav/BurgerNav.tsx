@@ -1,6 +1,5 @@
 "use client";
 import styles from "./BurgerNav.module.css";
-import React, { useState } from "react";
 
 export default function BurgerNav({
   hamburgerOpen,
