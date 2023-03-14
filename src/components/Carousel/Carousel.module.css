@@ -6,15 +6,16 @@
     margin: 5vh 0;
     overflow: hidden;
   }
+
   .embla__container {
-    /* padding-left: 0.5em; */
     display: flex;
-    /* margin: 8vh; */
   }
+
   .embla__slide {
     flex: 0 0 100%;
     min-width: 0;
   }
+
   .embla__viewport {
     margin: 4vh 0;
     overflow: hidden;
@@ -31,9 +32,11 @@
     padding-left: var(--slide-spacing);
     position: relative;
   }
+
   .embla__slide:hover {
     cursor: pointer;
   }
+
   .embla__slide__img {
     display: block;
     height: var(--slide-height);
@@ -41,6 +44,7 @@
     object-fit: cover;
   }
 }
+
 @media screen and (min-width: 768px) {
   .embla {
     display: none;

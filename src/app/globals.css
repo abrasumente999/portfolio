@@ -7,19 +7,16 @@
 html,
 body {
   width: 100vw;
-
   overflow-x: hidden;
-
   height: 100vh;
 }
+
 main {
-  /* margin: auto; */
   max-width: 3000px;
 }
 
 header {
   height: 100vh;
-  /* width: 100%; */
 }
 
 nav {

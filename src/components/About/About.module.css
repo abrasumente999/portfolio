@@ -1,20 +1,18 @@
 @media screen and (max-width: 1023px) {
   .aboutContainer {
     display: flex;
-
     flex-direction: column;
     height: 100vh;
     position: relative;
     align-items: center;
     margin: 0 8vw 0 8vw;
-
     justify-content: center;
   }
 
   .aboutBlobMini {
     z-index: -1;
     border-radius: 50% 50% 50% 50%;
-    /* padding-top: 4em; */
+
     position: relative;
     height: 60vw;
     width: 60vw;
@@ -29,7 +27,6 @@
     padding-bottom: 100%;
   }
   .aboutText {
-    /* margin: auto; */
     display: block;
     height: auto;
   }
@@ -51,10 +48,8 @@
 @media screen and (min-width: 1023px) {
   .aboutContainer {
     width: 100vw;
-
     height: 100vh;
     position: relative;
-
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -69,13 +64,11 @@
     width: 70vh;
     top: -10vh;
     left: 20vw;
-
     background-color: #eae6e43a;
   }
   .aboutBlobMini {
     z-index: 0;
     border-radius: 50% 50% 50% 50%;
-
     height: 30vw;
     width: 30vw;
     max-width: 600px;
