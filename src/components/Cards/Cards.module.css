@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .cardContainer {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .cardContainer {
+    display: flex;
+    margin: 0 10vw;
+    height: 100%;
+    width: auto;
+    border: solid red 3px;
+  }
+}
