@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { projects } from "../../../../data";
 import type { ProjectType, ResponseError } from "../../../../data";
 
-export default function personHandler(
+export default function projectHandler(
   req: NextApiRequest,
   res: NextApiResponse<ProjectType | ResponseError>
 ) {
