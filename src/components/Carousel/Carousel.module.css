@@ -14,6 +14,7 @@
   .embla__slide {
     flex: 0 0 100%;
     min-width: 0;
+    overflow: hidden;
   }
 
   .embla__viewport {
@@ -42,6 +43,28 @@
     height: var(--slide-height);
     width: 100%;
     object-fit: cover;
+  }
+  .embla__isTapped {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding-left: 4vw;
+    padding-right: 8vw;
+    object-fit: cover;
+    background-color: #ffffffd0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectHeader {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 900;
+    padding: 1vw 0;
+  }
+  .projectDesc {
+    font-weight: 400;
+    padding-bottom: 3vh;
   }
 }
 
