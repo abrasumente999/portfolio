@@ -7,11 +7,12 @@ export default function Intro() {
       <section className={styles.introText}>
         <h1>
           <span className={robotoMono.className + " " + styles.smallHeader}>
-            {" "}
             Hello my name is
           </span>
           <span className={roboto.className + " " + styles.bigHeader}>
-            Katie <br />
+            Katie
+          </span>
+          <span className={roboto.className + " " + styles.bigHeader}>
             Holliday
           </span>
         </h1>
