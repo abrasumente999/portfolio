@@ -1,12 +1,12 @@
 import { StaticImageData } from "next/image";
-import image1 from "../../public/image1.jpg";
+import cover1 from "../../public/cover1.jpg";
+import cover2 from "../../public/cover2.jpg";
+import cover3 from "../../public/cover3.jpg";
 
-export const images: StaticImageData[] = [image1, image1, image1, image1];
-
-console.log(images[1]);
+export const images: StaticImageData[] = [cover1, cover2, cover3];
+console.log(images);
 const imageByIndex = (index: number): string => {
   return images[index % images.length].src;
 };
 
-console.log(imageByIndex(1));
 export default imageByIndex;
