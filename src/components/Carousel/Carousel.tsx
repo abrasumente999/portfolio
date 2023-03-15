@@ -11,18 +11,10 @@ import { useState } from "react";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-export function Carousel() {
-  const { data, error, isLoading } = useSWR<ProjectType[]>(
-    "/api/projects",
-    fetcher
-  );
+export function Carousel({ data }: { data: ProjectType[] }) {
   const OPTIONS: EmblaOptionsType = { align: "center" };
   const [emblaRef] = useEmblaCarousel(OPTIONS);
   const [isTapped, setIsTapped] = useState<ProjectType>();
-
-  if (error) return <div>Failed to load</div>;
-  if (isLoading) return <div>Loading...</div>;
-  if (!data) return null;
 
   const renderElement = (project: ProjectType) => {
     if (isTapped) {
@@ -37,7 +29,17 @@ export function Carousel() {
           <p className={robotoMono.className + " " + styles.projectDesc}>
             {project.description}
           </p>
-          See More
+          <p
+            className={
+              robotoMono.className +
+              " " +
+              styles.projectSeeMore +
+              " " +
+              styles[`p${project.id}`]
+            }
+          >
+            Read More
+          </p>
         </Link>
       );
     } else {
@@ -46,11 +48,11 @@ export function Carousel() {
   };
 
   return (
-    <div className={styles.embla}>
+    <section className={styles.embla}>
       <div className={styles.embla__viewport} ref={emblaRef}>
         <div className={styles.embla__container}>
           {data.map((project) => (
-            <div
+            <article
               className={styles.embla__slide}
               key={project.id}
               onClick={() => setIsTapped(project)}
@@ -58,17 +60,16 @@ export function Carousel() {
               {project === isTapped ? renderElement(project) : null}
               <Image
                 className={styles.embla__slide__img}
-                src={imageByIndex(project.id - 1)}
-                alt="Your alt text"
+                src={imageByIndex(+project.id - 1)}
+                alt={`Screenshot of ${project.name} project`}
                 width={300}
                 height={300}
               />
-            </div>
-            // </Link>
+            </article>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
