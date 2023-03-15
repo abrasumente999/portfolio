@@ -3,6 +3,9 @@
     --slide-spacing: 1rem;
     --slide-size: 90vw;
     --slide-height: 90vw;
+    --project1-colour: #f0676c;
+    --project2-colour: #709e83;
+    --project3-colour: #e16b00;
     margin: 5vh 0;
     overflow: hidden;
   }
@@ -52,19 +55,36 @@
     padding-left: 4vw;
     padding-right: 8vw;
     object-fit: cover;
-    background-color: #ffffffd0;
+    background-color: #ffffffc0;
+    backdrop-filter: blur(5px);
     flex-direction: column;
     justify-content: center;
   }
   .projectHeader {
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 900;
     padding: 1vw 0;
   }
   .projectDesc {
+    font-size: 14px;
     font-weight: 400;
     padding-bottom: 3vh;
+  }
+  .projectSeeMore {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .p1 {
+    color: var(--project1-colour);
+  }
+  .p2 {
+    color: var(--project2-colour);
+  }
+  .p3 {
+    color: var(--project3-colour);
   }
 }
 
