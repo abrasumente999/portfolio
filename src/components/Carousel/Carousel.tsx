@@ -1,7 +1,7 @@
 "use client";
 import useSWR from "swr";
 import styles from "./Carousel.module.css";
-import { robotoMono, roboto } from "@/app/fonts";
+import { robotoMono } from "@/app/fonts";
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import imageByIndex from "@/utils/utils";
 import { ProjectType } from "data";
@@ -23,9 +23,7 @@ export function Carousel({ data }: { data: ProjectType[] }) {
           href={`/projects/${project.id}`}
           className={styles.embla__isTapped}
         >
-          <h3 className={roboto.className + " " + styles.projectHeader}>
-            {project.name}
-          </h3>
+          <h3 className={styles.projectHeader}>{project.name}</h3>
           <p className={robotoMono.className + " " + styles.projectDesc}>
             {project.description}
           </p>
