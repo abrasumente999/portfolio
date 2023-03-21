@@ -1,14 +1,83 @@
-@media (max-width: 768px) {
-  .cardContainer {
+@media (max-width: 1023px) {
+  .cardsContainer {
     display: none;
   }
 }
-@media (min-width: 768px) {
-  .cardContainer {
+@media (min-width: 1023px) {
+  .cardsContainer {
+    background-color: #eae6e4;
     display: flex;
+    flex-direction: column;
     margin: 0 10vw;
+    align-items: center;
+
+    --project1-colour: #f0676c;
+    --project2-colour: #709e83;
+    --project3-colour: #e16b00;
+  }
+  .cardsProjectContainer {
+    margin: 3vh 0;
+    width: 90%;
+    height: 50vh;
+    display: block;
+    overflow: hidden;
+    border: solid black 3px;
+  }
+  .cardsProjectEven {
+    width: 100%;
     height: 100%;
-    width: auto;
-    border: solid red 3px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .cardsProjectOdd {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .cardsImage {
+    width: 50%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .projectHeader {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 900;
+  }
+  .projectType {
+    text-transform: uppercase;
+    padding-bottom: 1vw;
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  .projectTextContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3vh;
+    width: 50%;
+    background-color: white;
+  }
+  .projectDesc {
+    font-size: 1em;
+    font-weight: 300;
+  }
+  .p1 {
+    color: var(--project1-colour);
+  }
+  .p2 {
+    color: var(--project2-colour);
+  }
+  .p3 {
+    color: var(--project3-colour);
   }
 }
