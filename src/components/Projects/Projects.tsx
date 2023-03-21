@@ -1,7 +1,6 @@
 "use client";
 import styles from "./Projects.module.css";
-import { robotoMono, roboto } from "@/app/fonts";
-import Card from "../Card/Cards";
+import Cards from "../Cards/Cards";
 import useSWR, { SWRConfig } from "swr";
 import Carousel from "../Carousel/Carousel";
 import { ProjectType } from "data";
@@ -20,12 +19,11 @@ export default function Projects() {
   return (
     <section className={styles.projectsContainer} id="projects">
       <div className={styles.projectsText}>
-        <h2 className={roboto.className + " " + styles.bigHeader}>Projects</h2>
+        <h2 className={styles.bigHeader}>Projects</h2>
       </div>
-      {/* <SWRConfig value={{ fallback }}> */}
+
       <Carousel data={data} />
-      <Card data={data} />
-      {/* </SWRConfig> */}
+      <Cards data={data} />
       <div className={styles.projectsBlobMini}>
         <div className={styles.profileImage}></div>
       </div>

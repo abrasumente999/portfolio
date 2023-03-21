@@ -1,11 +1,11 @@
 @media screen and (max-width: 1023px) {
   .projectsContainer {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     background-color: #eae6e4;
     align-items: flex-start;
   }
@@ -33,7 +33,6 @@
 @media screen and (min-width: 1023px) {
   .projectsContainer {
     width: 100vw;
-    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
